@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK KEEPER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog id="myDialog">
+        <div class="dialogContent">
+          <form method="post">
+            <input type="text" name="title" value="" placeholder="Book Title"><br><br>
+            <input type="text" name="author" value="" placeholder="Author"><br><br>
+            <input type="number" name="pages" value="" placeholder="Number of pages"><br><br>
+      
+            <label>
+              Have you read the book?
+              <input type="radio" name="read" value="yes">Yes
+              <input type="radio" name="read" value="no">No
+            </label><br><br>
+      
+            <input type="submit" value="Submit" id="books-submit">
+          </form>
+        </div>
+    </dialog>
+    <div class="add-button">
+        <div>
+            <input type="button" value="ADD BOOK" onclick="add()">
+        </div>
+    </div>
+    <div class="the-books">
+
+    </div>
+</body>
+</html>

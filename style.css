@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: calc(1rem + 0.5vw);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background-color: #F5EEDD;
+}
+dialog {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    font-size: calc(1rem + .5vw);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  }
+dialog input {
+    font-size: calc(1rem + .5vw); /* Apply to input text */
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%; /* Optional: make input take full width */
+    box-sizing: border-box; /* Optional: to include padding within width */
+  }
+  
+dialog input::placeholder {
+    font-size: calc(1rem + .5vw); /* Apply to placeholder text */
+  }
+  
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+  }
+  
+.dialogContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+dialog[open] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.add-button{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #7AE2CF;
+}
+.add-button input{
+    background-color: #077A7D;
+    color: white;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0px ;
+    font-size: calc(1rem + 2.5vw);
+    border-radius: 4px;
+}
+.the-books{
+    padding: 7px;
+    margin: 6px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.one-book{
+    background-color: #06202B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33vw;
+    height: 33vh;
+    border-radius: 7px;
+}
+.one-book p{
+    font-size: calc(1rem + 1.5vw);
+}
+.one-book button{
+    background-color: #7AE2CF;
+    color: #06202B;
+    padding: 7px;
+    border-radius: 16px;
+    border: none;
+}
