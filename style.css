@@ -64,6 +64,7 @@ dialog[open] {
     margin: 6px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 1vw;
 }
 .one-book{
     background-color: #06202B;
